@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - SolidObjects
   - 
   - 
   - 
@@ -47,12 +47,12 @@ TagManager:
   - name: Terrain
     uniqueID: 3882507671
     locked: 0
-  - name: Fences
+  - name: Tree
     uniqueID: 1646023845
-    locked: 0
-  - name: Object
-    uniqueID: 2892430885
     locked: 0
   - name: Player
     uniqueID: 3066563651
+    locked: 0
+  - name: Object
+    uniqueID: 2892430885
     locked: 0
