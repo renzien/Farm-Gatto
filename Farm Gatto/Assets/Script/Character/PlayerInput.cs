@@ -8,6 +8,7 @@ public class PlayerInput : MonoBehaviour
     public float moveSpeed = 5f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
+    public AudioSource footstepSound;
     Vector2 movementInput;
     Rigidbody2D rb;
     Animator animator;
@@ -42,7 +43,12 @@ public class PlayerInput : MonoBehaviour
             animator.SetBool("isMoving", false);
         }
 
-
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            footstepSound.enabled = true;
+        } else {
+            footstepSound.enabled = false;
+        }
     }
 
     private bool TryMove(Vector2 direction)
